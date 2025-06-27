@@ -1,2 +1,0 @@
-[profile.default]
-rpc_endpoints = { mainnet = "https://mainnet.infura.io/v3/IL_TUO_PROJECT_ID" }
