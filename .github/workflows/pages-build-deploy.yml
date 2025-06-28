@@ -1,7 +1,7 @@
 name: Deploy Docs to GitHub Pages
 
 permissions:
-  contents: read          
+  contents: read      
   pages: write        
 
 on:
