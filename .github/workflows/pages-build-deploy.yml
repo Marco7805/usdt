@@ -1,8 +1,8 @@
 name: Deploy Docs to GitHub Pages
 
 permissions:
-  contents: read      # necessario per checkout
-  pages: write        # necessario per il deploy
+  contents: read          
+  pages: write        
 
 on:
   push:
@@ -13,7 +13,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -27,5 +28,6 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+
 
 
